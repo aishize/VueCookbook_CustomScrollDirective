@@ -36,9 +36,8 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
-
     <v-content>
-      app
+      <router-view />
     </v-content>
   </v-app>
 </template>
