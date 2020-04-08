@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      hide-on-scroll
       dark
     >
       <div class="d-flex align-center">
@@ -36,7 +36,7 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-content>
+    <v-content class="content-wrap">
       <router-view />
     </v-content>
   </v-app>
@@ -48,3 +48,7 @@ export default {
   name: 'App'
 }
 </script>
+<style lang="sass">
+.content-wrap
+  background-color: black !important
+</style>
